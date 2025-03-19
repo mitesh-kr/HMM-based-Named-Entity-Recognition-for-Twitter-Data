@@ -2,6 +2,8 @@
 
 This repository contains an implementation of Hidden Markov Models (HMM) for Named Entity Recognition in Twitter data. The project uses various configurations of HMMs, including bigram and trigram models with and without contextual emission probabilities.
 
+## [Google colab](https://colab.research.google.com/drive/1qUiYMd67DAH-FRwhpanWl3H2iau75onE?usp=sharing)
+
 ## Task
 
 1. Identify all named entities (binary classification)
