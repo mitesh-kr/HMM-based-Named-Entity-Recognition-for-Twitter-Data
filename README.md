@@ -29,8 +29,8 @@ Where "context" refers to using the previous tag when calculating emission proba
 ## Installation
 
 ```bash
-git clone https://github.com/yourusername/hmm-ner-twitter.git
-cd hmm-ner-twitter
+git clone https://github.com/mitesh-kr/HMM-based-Named-Entity-Recognition-for-Twitter-Data.git
+cd HMM-based-Named-Entity-Recognition-for-Twitter-Data
 pip install -r requirements.txt
 ```
 
