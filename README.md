@@ -68,15 +68,28 @@ More detailed analysis can be found in the [report](report/NER_HMM_Report.md).
 ## Repository Structure
 
 ```
-hmm-ner-twitter/
+HMM-based-Named-Entity-Recognition-for-Twitter-Data/
 ├── README.md
 ├── requirements.txt
-├── src/                # Source code
-├── scripts/            # Training and evaluation scripts
-├── configs/            # Configuration files
-├── notebooks/          # Jupyter notebooks for analysis
-├── data/               # Dataset (not included in repository)
-└── report/             # Project report and analysis
+├── src/
+│   ├── __init__.py
+│   ├── hmm_tagger.py
+│   ├── data_utils.py
+│   ├── evaluation.py
+│   └── visualization.py
+├── scripts/
+│   ├── train.py
+│   ├── evaluate.py
+│   └── predict.py
+├── configs/
+│   └── model_configs.json
+├── notebooks/
+│   └── model_analysis.ipynb
+├── data/
+│   ├── .gitignore
+│   └── README.md
+└── report/
+    └── NER_HMM_Report.md
 ```
 
 ## License
