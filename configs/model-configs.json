@@ -1,0 +1,31 @@
+{
+  "models": [
+    {
+      "name": "bigram_no_context",
+      "use_context": false,
+      "n_gram": 2,
+      "description": "HMM model using bigram transitions and no context for emissions"
+    },
+    {
+      "name": "bigram_with_context",
+      "use_context": true,
+      "n_gram": 2,
+      "description": "HMM model using bigram transitions and previous tag context for emissions"
+    },
+    {
+      "name": "trigram_no_context",
+      "use_context": false,
+      "n_gram": 3,
+      "description": "HMM model using trigram transitions and no context for emissions"
+    },
+    {
+      "name": "trigram_with_context",
+      "use_context": true,
+      "n_gram": 3,
+      "description": "HMM model using trigram transitions and previous tag context for emissions"
+    }
+  ],
+  "parameters": {
+    "smoothing_value": 1e-10
+  }
+}
