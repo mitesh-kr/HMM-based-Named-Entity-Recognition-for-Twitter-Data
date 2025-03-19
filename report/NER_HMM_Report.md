@@ -150,70 +150,38 @@ The models are implemented in Python with the following structure:
 
 ## 5. Results and Discussion
 
-### 5.1 Overall Performance
 
 | Model | Accuracy | Precision | Recall | F1-Score |
 |-------|----------|-----------|--------|----------|
-| Bigram (No Context) | X.XX | X.XX | X.XX | X.XX |
-| Bigram (With Context) | X.XX | X.XX | X.XX | X.XX |
-| Trigram (No Context) | X.XX | X.XX | X.XX | X.XX |
-| Trigram (With Context) | X.XX | X.XX | X.XX | X.XX |
+| Bigram (No Context) | 0.6378 | 0.8949 | 0.6378 | 0.7424 |
+| Bigram (With Context) | 0.6748 | 0.8746 | 0.6748 | 0.7597 |
+| Trigram (No Context) | 0.9029 | 0.8168 | 0.9029 | 0.8577 |
+| Trigram (With Context) | 0.9033 | 0.8168 | 0.9033 | 0.8579 |
 
-### 5.2 Performance by Entity Type
 
-| Entity Type | Precision | Recall | F1-Score |
-|-------------|-----------|--------|----------|
-| Person | X.XX | X.XX | X.XX |
-| Product | X.XX | X.XX | X.XX |
-| Company | X.XX | X.XX | X.XX |
-| Geolocation | X.XX | X.XX | X.XX |
-| Movie | X.XX | X.XX | X.XX |
-| Music artist | X.XX | X.XX | X.XX |
-| TVShow | X.XX | X.XX | X.XX |
-| Facility | X.XX | X.XX | X.XX |
-| Sports team | X.XX | X.XX | X.XX |
-| Others | X.XX | X.XX | X.XX |
 
-### 5.3 Error Analysis
-
-Common error patterns observed:
-1. **Entity Boundary Detection**: [Description of errors]
-2. **Entity Type Confusion**: [Description of errors]
-3. **Rare Entities**: [Description of errors]
-4. **Twitter-specific Issues**: [Description of errors]
-
-### 5.4 Model Comparison
-
-1. **Bigram vs. Trigram Models**:
-   - [Analysis of the impact of higher-order transitions]
-   - [Discussion of when trigram models perform better/worse]
-
-2. **Impact of Context in Emission Probabilities**:
-   - [Analysis of the impact of using context for emissions]
-   - [Discussion of trade-offs (performance vs. sparsity)]
 
 ## 6. Conclusions
 
 [Summary of key findings]
 
-The main conclusions from our experiments are:
-1. [First key finding]
-2. [Second key finding]
-3. [Third key finding]
+1. HMM-based approaches can achieve reasonable performance for NER on Twitter data,
+with the best model achieving an F1 score of 0.76.
 
-### 6.1 Limitations
+2. Adding context to emission probabilities consistently improves performance, highlighting
+the importance of considering surrounding tokens.
 
-Current limitations of our approach include:
-- [Limitation 1]
-- [Limitation 2]
-- [Limitation 3]
+3. The extreme class imbalance in the dataset poses significant challenges, particularly for
+more complex models like the trigram HMM.
 
-### 6.2 Future Work
+4. Simpler models (bigram) outperform more complex ones (trigram) in this task due to
+their better handling of data sparsity and class imbalance.
 
-Potential directions for future work:
-1. [Future direction 1]
-2. [Future direction 2]
-3. [Future direction 3]
+Overall, while the HMM approach provides a strong baseline for NER on Twitter data, the task
+remains challenging due to the nature of social media text and the imbalanced distribution of
+entity types. Future work should focus on addressing these specific challenges to improve
+performance further.
+
 
 ## 7. References
 
