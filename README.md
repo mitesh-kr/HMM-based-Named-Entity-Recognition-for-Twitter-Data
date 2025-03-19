@@ -58,12 +58,12 @@ python scripts/predict.py --model_path results/model_bigram_with_context.pkl --i
 
 ## Results
 
-| Model | Accuracy | Precision | Recall | F1 Score |
+| Model | Accuracy | Precision | Recall | F1-Score |
 |-------|----------|-----------|--------|----------|
-| Bigram without context | X.XX | X.XX | X.XX | X.XX |
-| Bigram with context | X.XX | X.XX | X.XX | X.XX |
-| Trigram without context | X.XX | X.XX | X.XX | X.XX |
-| Trigram with context | X.XX | X.XX | X.XX | X.XX |
+| Bigram (No Context) | 0.6378 | 0.8949 | 0.6378 | 0.7424 |
+| Bigram (With Context) | 0.6748 | 0.8746 | 0.6748 | 0.7597 |
+| Trigram (No Context) | 0.9029 | 0.8168 | 0.9029 | 0.8577 |
+| Trigram (With Context) | 0.9033 | 0.8168 | 0.9033 | 0.8579 |
 
 More detailed analysis can be found in the [report](report/NER_HMM_Report.md).
 
